@@ -148,3 +148,10 @@ attemp 2.5: goto，准确的说，是跳转问题
     > http://blog.csdn.net/fjb2080/article/details/5248359
     - 标签也是有地址的！
 ### 函数间跳转：setjmp, longjmp
+
+
+attemp 3: 回到起点
+----------------------------------
+> http://www.ibm.com/developerworks/cn/opensource/os-cn-pythonwith/index.html
+- 似乎绕的远了（或许底层实现确实是C，但是似乎不需要知道这些）
+

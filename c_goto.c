@@ -3,19 +3,16 @@
 #include <time.h>
 int main(int argc,char *argv[])
 {
-	void *target;
+	void *target[] = {&&eventag, &&oddtag};
+    int id;
 	time_t now;
 	now = time((time_t *)NULL);
-	if(now & 0x0001)
-		target = &&oddtag;
-	else
-		target = &&eventag;
-	goto *target;
+	goto *target[now%2];
 eventag:
-	printf("The time value %ld is even/n",now);
+	printf("The time value %ld is even\n",now);
 	return(0);
 oddtag:
-	printf("The time value %ld is odd/n",now);
+	printf("The time value %ld is odd\n",now);
 	return(0);
 }
 
