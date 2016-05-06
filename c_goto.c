@@ -1,4 +1,7 @@
-/* gotoaddr.c */
+/* gotoaddr.c 
+ * reference:
+ * 	http://blog.csdn.net/fjb2080/article/details/5248359
+ */
 #include <stdio.h>
 #include <time.h>
 int main(int argc,char *argv[])
